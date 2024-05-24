@@ -7,12 +7,12 @@
     "require": {
         "php": "^7.3|^8.0",
         "fruitcake/laravel-cors": "^2.0",
-        "google/protobuf": "^4.27",
         "grpc/grpc": "^1.57",
         "guzzlehttp/guzzle": "^7.0.1",
         "laravel/framework": "^8.75",
         "laravel/sanctum": "^2.11",
-        "laravel/tinker": "^2.5"
+        "laravel/tinker": "^2.5",
+        "vandarpay/laravel-grpc": "^0.1.1"
     },
     "require-dev": {
         "facade/ignition": "^2.5",
@@ -49,7 +49,7 @@
             "@php artisan key:generate --ansi"
         ],
         "grpc-generate": [
-            "protoc --proto_path=../protos/ --php_out=. ../protos/sample.proto "
+            "protoc --proto_path=app/Protobuf --php_out=./app/Protobuf sample.proto"
         ]
     },
     "extra": {

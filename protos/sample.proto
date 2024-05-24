@@ -2,6 +2,9 @@ syntax="proto3";
 
 package sample;
 
+option php_namespace = "GrpcServices\\Sample\\Messages";
+option php_metadata_namespace = "GrpcServices\\Sample";
+
 service UserService {
     rpc ListUsers(ListUsersRequest) returns (stream User);
     rpc UpdateUser(UpdateUserRequest) returns (User);
