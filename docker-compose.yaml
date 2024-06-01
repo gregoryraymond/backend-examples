@@ -1,0 +1,26 @@
+services:
+  php:
+    image: php-backend
+    build:
+      context: php
+      dockerfile: php/Dockerfile
+  rust:
+    image: rust-backend
+    build:
+      context: rust
+      dockerfile: rust/Dockerfile
+  go:
+    image: go-backend
+    build:
+      context: go
+      dockerfile: go/Dockerfile
+  csharp:
+    image: csharp-backend
+    build:
+      context: c#
+      dockerfile: c#/Dockerfile
+  python:
+    image: python-backend
+    build:
+      context: python
+      dockerfile: python/Dockerfile

@@ -1,0 +1,3 @@
+go 1.21rc2
+
+use ./src
